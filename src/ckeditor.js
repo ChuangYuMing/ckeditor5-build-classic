@@ -28,6 +28,7 @@ import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefrom
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 
+import Font from '@ckeditor/ckeditor5-font/src/font';
 import PreElement from 'ckeditor5-code-block/src/pre';
 
 export default class ClassicEditor extends ClassicEditorBase {}
@@ -55,11 +56,25 @@ ClassicEditor.builtinPlugins = [
 	Paragraph,
 	PasteFromOffice,
 	Table,
-	TableToolbar
+	TableToolbar,
+	Font
 ];
 
 // Editor configuration.
 ClassicEditor.defaultConfig = {
+	fontSize: {
+		options: [
+			11,
+			12,
+			13,
+			'default',
+			17,
+			19,
+			21,
+			25,
+			28,
+		]
+	},
 	toolbar: {
 		items: [
 			'heading',
@@ -71,6 +86,7 @@ ClassicEditor.defaultConfig = {
 			'numberedList',
 			'imageUpload',
 			'pre',
+			'fontSize',
 			'blockQuote',
 			'insertTable',
 			'mediaEmbed',
