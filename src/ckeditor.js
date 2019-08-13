@@ -75,6 +75,31 @@ ClassicEditor.defaultConfig = {
 			28,
 		]
 	},
+	fontColor: {
+		colors: [
+			{
+				color: 'hsl(0, 0%, 0%)',
+				label: 'Black'
+			},
+			{
+				color: 'hsl(0, 0%, 30%)',
+				label: 'Dim grey'
+			},
+			{
+				color: 'hsl(0, 0%, 60%)',
+				label: 'Grey'
+			},
+			{
+				color: 'hsl(0, 0%, 90%)',
+				label: 'Light grey'
+			},
+			{
+				color: 'hsl(0, 0%, 100%)',
+				label: 'White',
+				hasBorder: true
+			},
+		]
+	},
 	toolbar: {
 		items: [
 			'heading',
@@ -87,6 +112,8 @@ ClassicEditor.defaultConfig = {
 			'imageUpload',
 			'pre',
 			'fontSize',
+			'fontColor',
+			'fontBackgroundColor',
 			'blockQuote',
 			'insertTable',
 			'mediaEmbed',
